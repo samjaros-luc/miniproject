@@ -1,1 +1,5 @@
 The HCMV genome (EF999921) has 168 CDS.
+Donor 1 (2dpi)had 2259287.0 read pairs before Bowtie2 filtering and 4112849 read pairs after.
+Donor 3 (6dpi)had 2476889.0 read pairs before Bowtie2 filtering and 3172229 read pairs after.
+Donor 3 (2dpi)had 2730258.0 read pairs before Bowtie2 filtering and 4905509 read pairs after.
+Donor 1 (6dpi)had 2004530.0 read pairs before Bowtie2 filtering and 3424940 read pairs after.
