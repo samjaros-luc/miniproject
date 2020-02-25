@@ -1,5 +1,6 @@
 # miniproject
 Mini-project for Dr. Wheeler's COMP 383
+
 Author: Sam Jaros
 
 # Software Requirements
