@@ -1,5 +1,15 @@
-The HCMV genome (EF999921) has 168 CDS.
-Donor 1 (2dpi)had 2259287.0 read pairs before Bowtie2 filtering and 4112849 read pairs after.
-Donor 3 (6dpi)had 2476889.0 read pairs before Bowtie2 filtering and 3172229 read pairs after.
-Donor 3 (2dpi)had 2730258.0 read pairs before Bowtie2 filtering and 4905509 read pairs after.
-Donor 1 (6dpi)had 2004530.0 read pairs before Bowtie2 filtering and 3424940 read pairs after.
+
+spades.py --disable-gzip-output --only-assembler --pe1-1 results/SRR5660030.1/SRR5660030.1.1.fastq --pe1-2 results/SRR5660030.1/SRR5660030.1.2.fastq --pe2-1 results/SRR5660045.1/SRR5660045.1.1.fastq --pe2-2 results/SRR5660045.1/SRR5660045.1.2.fastq --pe3-1 results/SRR5660044.1/SRR5660044.1.1.fastq --pe3-2 results/SRR5660044.1/SRR5660044.1.2.fastq --pe4-1 results/SRR5660033.1/SRR5660033.1.1.fastq --pe4-2 results/SRR5660033.1/SRR5660033.1.2.fastq -o result/SPAdes
+There are 81 contigs > 1000 bp in the assembly.
+There are 132796 bp in the assembly.
+seq_title	allign_len	number_HSPs	topHSP_ident	topHSP_gaps	topHSP_bits	topHSP_expect
+gi|404315683|gb|JX512204.1| Human herpesvirus 5 strain HAN16, complete genome	235112	3	5859	0	10567.2	0.0
+gi|523510377|gb|KF297339.1| Human herpesvirus 5 strain TB40/E clone Lisa, complete genome	237683	3	5859	0	10567.2	0.0
+gi|157779983|gb|EF999921.1| Human herpesvirus 5 strain TB40/E clone TB40-BAC4, complete sequence	229050	3	5859	0	10567.2	0.0
+gi|39841785|gb|AY446866.1| Human herpesvirus 5 strain TB40/E, partial genome	25572	2	5859	0	10567.2	0.0
+gi|1098408701|gb|KX544839.1| Human herpesvirus 5 isolate TB40-E_UNC, complete genome	228992	3	5858	1	10559.1	0.0
+gi|1205243315|gb|MF084224.1| Human betaherpesvirus 5 strain HER1, complete genome	235079	3	5858	11	10538.4	0.0
+gi|586832780|gb|KJ361947.1| Human herpesvirus 5 strain 2CEN5, complete genome	235567	3	5858	11	10538.4	0.0
+gi|1110842241|gb|KY123653.1| Human herpesvirus 5 strain HANSCTR4, complete genome	235510	3	5852	11	10516.7	0.0
+gi|1145593380|gb|KY490077.1| Human betaherpesvirus 5 strain HANRTR9, complete genome	235175	3	5823	11	10380.6	0.0
+gi|823077132|gb|KR534206.1| Human herpesvirus 5 strain JER4041, complete genome	234917	3	5800	29	10268.8	0.0
