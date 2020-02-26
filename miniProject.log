@@ -1,3 +1,4 @@
+The HCMV genome (EF999921) has 168 CDS.
 
 spades.py --disable-gzip-output --only-assembler --pe1-1 results/SRR5660030.1/SRR5660030.1.1.fastq --pe1-2 results/SRR5660030.1/SRR5660030.1.2.fastq --pe2-1 results/SRR5660045.1/SRR5660045.1.1.fastq --pe2-2 results/SRR5660045.1/SRR5660045.1.2.fastq --pe3-1 results/SRR5660044.1/SRR5660044.1.1.fastq --pe3-2 results/SRR5660044.1/SRR5660044.1.2.fastq --pe4-1 results/SRR5660033.1/SRR5660033.1.1.fastq --pe4-2 results/SRR5660033.1/SRR5660033.1.2.fastq -o result/SPAdes
 There are 81 contigs > 1000 bp in the assembly.
@@ -13,3 +14,5 @@ gi|586832780|gb|KJ361947.1| Human herpesvirus 5 strain 2CEN5, complete genome	23
 gi|1110842241|gb|KY123653.1| Human herpesvirus 5 strain HANSCTR4, complete genome	235510	3	5852	11	10516.7	0.0
 gi|1145593380|gb|KY490077.1| Human betaherpesvirus 5 strain HANRTR9, complete genome	235175	3	5823	11	10380.6	0.0
 gi|823077132|gb|KR534206.1| Human herpesvirus 5 strain JER4041, complete genome	234917	3	5800	29	10268.8	0.0
+
+
