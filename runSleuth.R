@@ -20,4 +20,4 @@ sleuthSignificant = dplyr::filter(sleuthResults, qval <= 0.05) %>% dplyr::arrang
 sleuthLog = dplyr::select(sleuthSignificant, target_id, test_stat, pval, qval)
 
 # Write results to log
-write.table(sleuthLog, file="miniProject.log", quote=F, row.names=F, sep="\t")
+write.table(sleuthLog, file="miniProject.log", quote=F, append=T, row.names=F, sep="\t")

@@ -1,7 +1,6 @@
 import os
 from Bio import Entrez,SeqIO
 
-## Part 0: Set up log ##
 log = open("miniProject.log","a")
 
 ## Part 2: Make kallisto index ##
@@ -30,5 +29,4 @@ seqNames = os.listdir("data")
 for file in seqNames:
     os.system("kallisto quant -i results/EF999921.idx -b 30 -t 4 -o results/"+file+" data/"+file+"/"+file+"_1.fastq data/"+file+"/"+file+"_2.fastq")
 
-## All done! ##
 log.close()
