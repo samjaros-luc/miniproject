@@ -19,4 +19,5 @@ os.system("python3 assembleSPAdes.py")
 ## Parts 6-8: Get contigs of >1000 bp and concatenate them ##
 os.system("python3 1000contigs.py")
 
-
+## Part 9: Blast the concatenated string ##
+os.system("python3 blastSeq.py")
