@@ -1,6 +1,11 @@
 library(sleuth)
 library(dplyr)
 
+# Get the names of the sequences we're working with
+seqNames = list.dirs("data", full.names, F, recursive=F)
+print(seqNames)
+print("results/"+seqNames)
+
 # Show sleuth where kallisto results are stored
 results = data.frame("sample"=c("SRR5660030.1","SRR5660033.1","SRR5660044.1","SRR5660045.1"), "condition"=c("2dpi","6dpi","2dpi","6dpi"), "path"=c("results/SRR5660030.1","results/SRR5660033.1","results/SRR5660044.1","results/SRR5660045.1"), stringsAsFactors=F)
 
