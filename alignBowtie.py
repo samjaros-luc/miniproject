@@ -32,13 +32,13 @@ seqNames = os.listdir("data")
 for file in seqNames:
     os.system("bowtie2 -x results/hh5/hh5 -1 data/"+file+"/"+file+"_1.fastq -2 data/"+file+"/"+file+"_2.fastq --al-conc results/"+file+"/"+file+".fastq --no-unal -S results/"+file+"/"+file+".sam")
     # Step 4: Write to the output
-    if file == "SRR5660030.1":
+    if file.startswith("SRR5660030.1"):
         log.write("Donor 1 (2dpi)")
-    elif file == "SRR5660033.1":
+    elif file.startswith("SRR5660033.1"):
         log.write("Donor 1 (6dpi)")
-    elif file == "SRR5660044.1":
+    elif file.startswith("SRR5660044.1"):
         log.write("Donor 3 (2dpi)")
-    elif file == "SRR5660045.1":
+    elif file.startswith("SRR5660045.1"):
         log.write("Donor 3 (6dpi)")
     numStart = file_len("data/"+file+"/"+file+"_1.fastq")/4
     numEnd = file_len("results/"+file+"/"+file+".1.fastq")/4
