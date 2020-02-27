@@ -15,7 +15,7 @@ for record in SeqIO.parse(handle, "genbank"): # converts the generator object in
         if feature.type == "CDS": # if the feature is a CDS, add it to the list and add to the count
             CDSs += ">"+feature.type+str(feature.location)+"\n"+str(feature.extract(record.seq))+"\n"
             numCDSs += 1
-log.write("The HCMV genome (" + ID + ") has " + str(numCDSs) + " CDS.") # log the reqirued data
+log.write("The HCMV genome (" + ID + ") has " + str(numCDSs) + " CDS.\n") # log the reqirued data
 fileOut = open("results/EF999921_CDS.fasta","w") # write the CDSs to the appropriate file
 fileOut.write(CDSs)
 handle.close()
