@@ -20,5 +20,7 @@ sleuthResults = sleuth_results(so, "reduced:full", "lrt", show_all=F)
 sleuthSignificant = dplyr::filter(sleuthResults, qval <= 0.05) %>% dplyr::arrange(pval)
 sleuthLog = dplyr::select(sleuthSignificant, target_id, test_stat, pval, qval)
 
+print(sleuthLog)
+
 # Write results to log
 write.table(sleuthLog, file="miniProject.log", quote=F, append=T, row.names=F, sep="\t")
